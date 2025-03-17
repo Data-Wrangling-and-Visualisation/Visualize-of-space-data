@@ -1,1 +1,3 @@
+Visualize of space data 
+by Rostislav Kirsanov, Dzhamilia Fatkullina, Sofia Pushkareva
 The project involved organising the data and creating visualisations. The StarVis folder contains a file that acts as the main source of data for analysis. The visualisation is also stored in this folder and is available at the link: https://dzhamiliafatkullina.github.io/starVisualization/. The data folder contains the script that was used to scrape and retrieve data from the API, as well as the collected data that is already being applied or will be used in the future. The main goal for the next phase is to improve visualisation, add interactive features and work with graphs for more convenient data analysis.
