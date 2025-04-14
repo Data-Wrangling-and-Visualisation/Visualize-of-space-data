@@ -5,7 +5,18 @@
 - Sofia Pushkareva
 
 ## Overview
-The project involved organising the data and creating visualisations. The \texttt{star_visualization} folder contains a file that acts as the main source of data for analysis. The visualisation is also stored in this folder and is available at the link: 
-https://dzhamiliafatkullina.github.io/starVisualization/. The data folder contains the script that was used to scrape and retrieve data from the API, as well as the collected data that is already being applied or will be used in the future. 
-The main goal for the next phase is to improve visualisation, add interactive features and work with graphs for more convenient data analysis.
+The Visualize-of-space-data project is aimed at applying data processing and visualization methods in the context of space research. The goal of the project is to use real-world space datasets to analyze and create visual representations that contribute to a better understanding of space phenomena and objects.
+A file project_proposals(1)(1) can be used to see more detailes.
 
+## Checkpoint 1
+- The star_visualization folder contains files to visualize stars. The info.json file is the main source of data for analysis. The visualisation is available at the link: 
+https://dzhamiliafatkullina.github.io/starVisualization/. It can be also watched on the vis_record.mp4 file.
+- The data folder contains the script that was used to scrape and retrieve data from the API. 
+- The main goal for the next phase is to improve visualisation, add interactive features and work with graphs for more convenient data analysis.
+
+## Checkpoint 2
+- Graphs were added using d3.js.
+- The design of the info panels was improved.
+- The main goals for the next phase are:
+  - to improve visualization, namely adding planets and their characteristics; in addition, it is possible to consider adding visualization of the distance to a particular planet or star from any object.
+  - make docker file
