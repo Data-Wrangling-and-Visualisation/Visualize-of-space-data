@@ -10,7 +10,7 @@ A file project_proposals(1)(1) can be used to see more detailes.
 
 ## Checkpoint 1
 - The star_visualization folder contains files to visualize stars. The info.json file is the main source of data for analysis. The visualisation is available at the link: 
-https://dzhamiliafatkullina.github.io/starVisualization/. It can be also watched on the vis_record.mp4 file.
+https://dzhamiliafatkullina.github.io/starVisualization/. It can be also watched on the vis_record.mp4 file (to watch need to download).
 - The data folder contains the script that was used to scrape and retrieve data from the API. 
 - The main goal for the next phase is to improve visualisation, add interactive features and work with graphs for more convenient data analysis.
 
