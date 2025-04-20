@@ -2,6 +2,7 @@
     {
         "planet_id": "199",
         "planet_name": "Mercury",
+        "texture_path": "mercury.jpg",
         "physical_characteristics": {
             "radius_km": 2439.4,
             "density_g_cm^-3": 5.427,
@@ -14,6 +15,7 @@
     {
         "planet_id": "299",
         "planet_name": "Venus",
+        "texture_path": "venus.jpg",
         "physical_characteristics": {
             "radius_km": 6051.84,
             "density_g_cm^3": 5.204,
@@ -26,6 +28,7 @@
     {
         "planet_id": "399",
         "planet_name": "Earth",
+        "texture_path": "earth.jpg",
         "physical_characteristics": {
             "radius_km": 6371.01,
             "equatorial_radius_km": 6378.137,
@@ -47,6 +50,7 @@
     {
         "planet_id": "499",
         "planet_name": "Mars",
+        "texture_path": "mars.jpg",
         "physical_characteristics": {
             "radius_km": 3389.92,
             "density_g_cm^3": 3.933,
@@ -60,6 +64,7 @@
     {
         "planet_id": "599",
         "planet_name": "Jupiter",
+        "texture_path": "jupiter.jpg",
         "physical_characteristics": {
             "radius_km": 69911.0,
             "density_g_cm^3": 1.3262,
@@ -72,6 +77,7 @@
     {
         "planet_id": "699",
         "planet_name": "Saturn",
+        "texture_path": "saturn.jpg",
         "physical_characteristics": {
             "radius_km": 58232.0,
             "density_g_cm^3": 0.687,
@@ -84,6 +90,7 @@
     {
         "planet_id": "799",
         "planet_name": "Uranus",
+        "texture_path": "uranus.jpg",
         "physical_characteristics": {
             "radius_km": 25362.0,
             "density_g_cm^3": 1.271,
@@ -96,6 +103,7 @@
     {
         "planet_id": "899",
         "planet_name": "Neptune",
+        "texture_path": "neptune.jpg",
         "physical_characteristics": {
             "radius_km": 24624.0,
             "density_g_cm^3": 1.638,
@@ -108,6 +116,7 @@
     {
         "planet_id": "999",
         "planet_name": "Pluto",
+        "texture_path": "pluto.jpg",
         "physical_characteristics": {
             "radius_km": 1188.3,
             "density_g_Neptune_cm3": 1.86,
@@ -117,11 +126,13 @@
     {
         "planet_id": "2000001",
         "planet_name": "Ceres",
+        "texture_path": "ceres.jpg",
         "physical_characteristics": {}
     },
     {
         "planet_id": "1000012",
         "planet_name": "Hale-Bopp",
+        "texture_path": "halebopp.jpg",
         "physical_characteristics": {}
     }
 ]
