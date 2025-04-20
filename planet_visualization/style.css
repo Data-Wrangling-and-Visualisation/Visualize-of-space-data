@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+  font-family: Arial, sans-serif;
+}
+
+canvas {
+  display: block;
+}
+
+#tooltip {
+  position: absolute;
+  color: white;
+  padding: 5px 8px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  pointer-events: none;
+  font-size: 14px;
+  z-index: 10;
+  display: none;
+  white-space: nowrap;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+}
