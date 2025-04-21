@@ -9,6 +9,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
+
+:root {
+  --primary: #6c5ce7;
+  --secondary: #00cec9;
+  --dark: #0f0e26;
+  --light: #f8f9fa;
+  --accent: #fd79a8;
+}
     body { 
       margin: 0; 
       overflow: hidden; 
@@ -33,29 +41,37 @@
     }
     
     .back-btn {
-      color: #4fc3f7;
-      text-decoration: none;
-      font-family: 'Orbitron', sans-serif;
-      font-size: 14px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.3s ease;
-    }
-    
-    .back-btn:hover {
-      color: #81d4fa;
-      transform: translateX(-3px);
-    }
-    
-    .title {
-      color: #e0f7fa;
-      font-family: 'Orbitron', sans-serif;
-      font-size: 20px;
-      letter-spacing: 2px;
-      margin: 0;
-      text-shadow: 0 0 10px rgba(79, 195, 247, 0.7);
-    }
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 50px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  font-family: 'Space Mono', monospace;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.back-btn:hover {
+  background-color: var(--secondary);
+  color: var(--dark);
+  transform: translateY(-2px);
+}
+
+.back-btn i {
+  font-size: 0.9rem;
+}
+
+.title {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--secondary);
+  margin: 0;
+  font-size: 1.5rem;
+}
     
     /* Tooltip styles */
     #tooltip {
