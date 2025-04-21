@@ -1,5 +1,5 @@
 # Use an official Python runtime as the base image
-FROM gcr.io/distroless/python3-debian11
+FROM python:3.11-slim-bookworm
 
 # Set the working directory in the container
 WORKDIR /app
@@ -9,9 +9,6 @@ COPY . .
 
 # Install Python dependencies
 RUN pip install requests pandas
-
-# Install a simple HTTP server to serve your files
-RUN apt-get update && apt-get install -y python3-httpie
 
 # Expose port 8000 for the web server
 EXPOSE 8000
