@@ -14,10 +14,11 @@ body {
 
 #tooltip {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.8);
+  color: white;
   padding: 5px;
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 5px;
   pointer-events: none;
   display: none;
-  font-size: 14px;
 }
+
