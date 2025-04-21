@@ -5,11 +5,15 @@
         "texture_path": "mercury.jpg",
         "physical_characteristics": {
             "radius_km": 2439.4,
+            "orbital_radius_km": 57900000,
+            "orbital_speed_km_s": 47.87,
             "density_g_cm^-3": 5.427,
             "mass_kg x10^23": 3.302,
             "gravity_mean_km^3_s^2": 22031.86855,
             "mean_temp_K": 440.0,
-            "albedo": 0.106
+            "albedo": 0.106,
+            "famous": true,
+    "host_star": "Sun"
         }
     },
     {
@@ -18,11 +22,15 @@
         "texture_path": "venus.jpg",
         "physical_characteristics": {
             "radius_km": 6051.84,
+            "orbital_radius_km": 108200000,
+            "orbital_speed_km_s": 35.02,
             "density_g_cm^3": 5.204,
             "mass_kg x10^23": 48.685,
             "gravity_mean_km^3_s^2": 324858.592,
             "mean_temp_K": 735.0,
-            "albedo": 0.65
+            "albedo": 0.65,
+            "famous": true,
+    "host_star": "Sun"
         }
     },
     {
@@ -31,6 +39,8 @@
         "texture_path": "earth.jpg",
         "physical_characteristics": {
             "radius_km": 6371.01,
+            "orbital_radius_km": 149600000,
+            "orbital_speed_km_s": 29.79,
             "equatorial_radius_km": 6378.137,
             "polar_radius_km": 6356.752,
             "density_g_cm^3": 5.51,
@@ -44,7 +54,8 @@
             "obliquity_deg": 23.4392911,
             "mean_surface_temp_K": 287.6,
             "albedo": 0.367,
-            "orbital_speed_km_s": 29.79
+            "famous": true,
+    "host_star": "Sun"
         }
     },
     {
@@ -53,12 +64,15 @@
         "texture_path": "mars.jpg",
         "physical_characteristics": {
             "radius_km": 3389.92,
+            "orbital_radius_km": 227900000,
+            "orbital_speed_km_s": 24.13,
             "density_g_cm^3": 3.933,
             "mass_kg x10^23": 6.4171,
             "gravity_mean_km^3_s^2": 42828.375214,
             "mean_temp_K": 210.0,
             "albedo": 0.15,
-            "orbital_speed_km_s": 24.13
+            "famous": true,
+    "host_star": "Sun"
         }
     },
     {
@@ -67,11 +81,15 @@
         "texture_path": "jupiter.jpg",
         "physical_characteristics": {
             "radius_km": 69911.0,
+            "orbital_radius_km": 778300000,
+            "orbital_speed_km_s": 13.07,
             "density_g_cm^3": 1.3262,
             "mass_kg x10^26": 18.9819,
             "gravity_mean_km^3_s^2": 126686531.9,
             "atmos_temp_K": 165.0,
-            "albedo": 0.52
+            "albedo": 0.52,
+            "famous": true,
+    "host_star": "Sun"
         }
     },
     {
@@ -80,11 +98,15 @@
         "texture_path": "saturn.jpg",
         "physical_characteristics": {
             "radius_km": 58232.0,
+            "orbital_radius_km": 1427000000,
+            "orbital_speed_km_s": 9.69,
             "density_g_cm^3": 0.687,
             "mass_kg x10^26": 5.6834,
             "gravity_mean_km^3_s^2": 37931206.234,
             "atmos_temp_K": 134.0,
-            "albedo": 0.47
+            "albedo": 0.47,
+            "famous": true,
+    "host_star": "Sun"
         }
     },
     {
@@ -93,11 +115,15 @@
         "texture_path": "uranus.jpg",
         "physical_characteristics": {
             "radius_km": 25362.0,
+            "orbital_radius_km": 2871000000,
+            "orbital_speed_km_s": 6.81,
             "density_g_cm^3": 1.271,
             "mass_kg x10^24": 86.813,
             "gravity_mean_km^3_s^2": 5793950.6103,
             "atmos_temp_K": 76.0,
-            "albedo": 0.51
+            "albedo": 0.51,
+            "famous": true,
+    "host_star": "Sun"
         }
     },
     {
@@ -106,11 +132,15 @@
         "texture_path": "neptune.jpg",
         "physical_characteristics": {
             "radius_km": 24624.0,
+            "orbital_radius_km": 4497100000,
+            "orbital_speed_km_s": 5.43,
             "density_g_cm^3": 1.638,
             "mass_kg x10^24": 102.409,
             "gravity_mean_km^3_s^2": 6835099.97,
             "atmos_temp_K": 72.0,
-            "albedo": 0.41
+            "albedo": 0.41,
+            "famous": true,
+    "host_star": "Sun"
         }
     },
     {
@@ -119,20 +149,32 @@
         "texture_path": "pluto.jpg",
         "physical_characteristics": {
             "radius_km": 1188.3,
+            "orbital_radius_km": 5913000000,
+            "orbital_speed_km_s": 4.74,
             "density_g_Neptune_cm3": 1.86,
-            "mass_kg x10^22": 1.307
+            "mass_kg x10^22": 1.307,
+            "famous": true,
+    "host_star": "Sun"
         }
     },
     {
         "planet_id": "2000001",
         "planet_name": "Ceres",
         "texture_path": "ceres.jpg",
-        "physical_characteristics": {}
+        "physical_characteristics": {
+            "radius_km": 940.0,
+            "orbital_radius_km": 413700000,
+            "orbital_speed_km_s": 17.88
+        }
     },
     {
         "planet_id": "1000012",
         "planet_name": "Hale-Bopp",
         "texture_path": "halebopp.jpg",
-        "physical_characteristics": {}
+        "physical_characteristics": {
+            "radius_km": 30.0,
+            "orbital_radius_km": 5370000000,
+            "orbital_speed_km_s": 54.0
+        }
     }
 ]
