@@ -4,11 +4,11 @@ const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
-const ambientLight = new THREE.AmbientLight(0x404040, 2); 
+const ambientLight = new THREE.AmbientLight(0x404040, 2);
 scene.add(ambientLight);
 
 const directionalLight = new THREE.DirectionalLight(0xffffff, 1); 
-directionalLight.position.set(5, 5, 5);
+directionalLight.position.set(5, 5, 5); 
 scene.add(directionalLight);
 
 const controls = new THREE.OrbitControls(camera, renderer.domElement);
@@ -16,7 +16,7 @@ controls.enableDamping = true;
 controls.dampingFactor = 0.05;
 controls.rotateSpeed = 0.5;
 camera.position.z = 50;
-controls.autoRotate = false; 
+controls.autoRotate = false;  
 controls.minDistance = 10;
 controls.maxDistance = 150;
 
@@ -42,7 +42,7 @@ function createPlanet(data, distanceFromSun) {
   const orbitSpeed = (data.physical_characteristics.orbital_speed_km_s || 0.01 + Math.random() * 0.01) / 1000;  
 
   const position = data.position || [Math.random() * 50 - 25, 0, Math.random() * 50 - 25];
-  const geometry = new THREE.SphereGeometry(data.radius * 1.5 || 1, 32, 32);  
+  const geometry = new THREE.SphereGeometry(data.radius * 1.5 || 1, 32, 32);
   const texture = data.texture_path ? loader.load("textures/" + data.texture_path) : null;
   const material = new THREE.MeshStandardMaterial({
     map: texture,
@@ -51,12 +51,11 @@ function createPlanet(data, distanceFromSun) {
   });
 
   const mesh = new THREE.Mesh(geometry, material);
-  mesh.position.set(...position); 
+  mesh.position.set(...position);
+  mesh.name = data.planet_name;  
   scene.add(mesh);
 
-  planets.push(mesh);
-  planetNames.push(data.name);
-
+  planets.push(mesh);  
   orbitData.push({
     center: data.orbitCenter || [0, 0, 0],
     radius: orbitRadius,
@@ -70,7 +69,7 @@ fetch('info.json')
   .then(data => {
     let distanceFromSun = 1;  
     data.forEach(obj => {
-      createPlanet(obj, distanceFromSun); 
+      createPlanet(obj, distanceFromSun);  
       distanceFromSun++;  
     });
   });
@@ -82,7 +81,7 @@ scene.add(pointLight);
 const sunTexture = loader.load('textures/sun.jpg'); 
 const sunGeo = new THREE.SphereGeometry(3, 64, 64);
 const sunMat = new THREE.MeshBasicMaterial({
-  map: sunTexture,  
+  map: sunTexture, 
   transparent: true,
   opacity: 0.9
 });
@@ -94,15 +93,15 @@ function animate() {
   requestAnimationFrame(animate);
   controls.update();
 
- 
+
   planets.forEach((p, i) => {
     const o = orbitData[i];
     if (o) {
-      o.angle += o.speed * 0.01; 
+      o.angle += o.speed * 0.01;  
       p.position.x = o.center[0] + o.radius * Math.cos(o.angle);  
       p.position.z = o.center[2] + o.radius * Math.sin(o.angle); 
 
-      
+   
       p.rotation.y += 0.005;
     }
   });
@@ -110,22 +109,27 @@ function animate() {
   
   sun.material.opacity = 0.8 + 0.1 * Math.sin(Date.now() * 0.002);
   
+ 
   renderer.render(scene, camera);
 }
-animate();
 
 window.addEventListener('mousemove', event => {
   mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
   mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
   raycaster.setFromCamera(mouse, camera);
+
+ 
   const intersects = raycaster.intersectObjects(planets);
+  
   if (intersects.length > 0) {
-    const idx = planets.indexOf(intersects[0].object);
+    const intersectedPlanet = intersects[0].object; 
     tooltip.style.left = `${event.clientX + 5}px`;
     tooltip.style.top = `${event.clientY + 5}px`;
-    tooltip.innerHTML = planetNames[idx];
+    tooltip.innerHTML = intersectedPlanet.name;  
     tooltip.style.display = 'block';
   } else {
     tooltip.style.display = 'none';
   }
 });
+
+animate();
